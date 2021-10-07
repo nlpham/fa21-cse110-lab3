@@ -1,1 +1,1 @@
-https://github.com/nlpham/fa21-cse110-lab3
+https://nlpham.github.io/fa21-cse110-lab3/
