@@ -1,4 +1,4 @@
-
+@media (min-width: 30em){
     *{
         margin-left:0;
         margin-right: 0;
@@ -123,3 +123,4 @@
         font-family: monospace;
     }
 
+}
