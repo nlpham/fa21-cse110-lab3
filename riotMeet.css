@@ -1,106 +1,125 @@
-@media (min-width: 30em) and (orientation: landscape){
-#logo{
+
+    *{
+        margin-left:0;
+        margin-right: 0;
+    }
+    #logo{
     display: inline;
     max-width: 20%;
     min-width: none;
     position: static;
-}
-h1{
-    display: inline-block;
-    /*centers the h1 elements*/
-    text-align: center;
-    /*1 use of relative sizing to increase header font size*/
-    font-size: 3.75rem;
-    padding-left: 100px;
-    font-family: 'Cinzel', serif;
+    }
+    h1{
+        display: inline-block;
+        /*centers the h1 elements*/
+        text-align: center;
+        /*1 use of relative sizing to increase header font size*/
+        font-size: 3.75rem;
+        padding-left: 100px;
+        font-family: 'Cinzel', serif;
+        
+    }
+    #date{
+        /*centers date*/
+        text-align: center;
+        /*changes date color to white*/
+        color: rgb(255, 255, 255);
+        /*2nd use of relative sizing to resize date*/
+        font-size: 1.25em;
+        position: relative;
+        
+    }
+    h2,h3{
+        /*Makes h2 elements the riot red*/
+        color: 	hsl(356, 67%, 49%);
+    }
+    body{
+        /*3rd use of relative sizing to make body width 100% of viewport*/
+        width: 100vw;
+        padding: 24px 0px 24px 0px;
+    }
+    .Zoom{
+        color: black;
+        background-color:#dbd9d6 ;
+        /*1 and 2nd absolute measurement along with long hand notation margin resizing*/
+        padding-top: .25in;
+        padding-bottom: .635cm;
+        /* 3rd absolute measurement with short hand notation margin resizing*/
+        margin:50px 0px 50px 0px;
+        padding-left: 20px;
     
-}
-#date{
-    /*centers date*/
-    text-align: center;
-    /*changes date color to white*/
-    color: rgb(255, 255, 255);
-    /*2nd use of relative sizing to resize date*/
-    font-size: 1.25em;
-    position: relative;
-    
-}
-h2{
-    /*Makes h2 elements the riot red*/
-    color: 	hsl(356, 67%, 49%);
-}
-body{
-    /*3rd use of relative sizing to make body width 100% of viewport*/
-    width: 100vw;
-    padding: 24px 0px 24px 0px;
-}
-.Zoom{
-    color: black;
-    background-color:#dbd9d6 ;
-    /*1 and 2nd absolute measurement along with long hand notation margin resizing*/
-    padding-top: .25in;
-    padding-bottom: .635cm;
-    /* 3rd absolute measurement with short hand notation margin resizing*/
-    margin:50px 0px 50px 0px;
-    padding-left: 20px;
- 
-}
-#zoompic{
-    border-style: solid;
-    border-color:#d22a36;
-    border-width: 5px;
-    border-radius: 10px;
-    height: auto;
+    }
+    #zoompic{
+        border-style: solid;
+        border-color:#d22a36;
+        border-width: 5px;
+        border-radius: 10px;
+        height: auto;
 
-}
-#vidMeet{
-    border-style: solid;
-    border-color:#d22a36;
-    border-width: 5px;
-    border-radius: 10px;
-}
-#newChamp{
-    text-align: center;
-    background-color:#d22a36;
-    color: white;
-}
+    }
+    #vidMeet{
+        border-style: solid;
+        border-color:#d22a36;
+        border-width: 5px;
+        border-radius: 10px;
+    }
+    #newChamp{
+        text-align: center;
+        background-color:#d22a36;
+        color: white;
+    }
 
-#submit:hover{
-    color: red;
-}
+    #submit:hover{
+        color: red;
+    }
 
-a:active{
-    color: red;
-}
-.list{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    flex-shrink: 3;
+    a:active{
+        color: red;
+    }
+    .list{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        flex-shrink: 3;
 
-}
-.listItem{
-    background: #d22a36;
-    padding: 5px;
-    width: 500px;
-    height: 150px;
-    margin-top: 10px;
-    line-height: 150px;
-    text-align: center;
-}
-#newZoom{
-    font-family: 'Gloria Hallelujah', cursive;
-}
-.grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill ,minmax(200px,1fr));
-    grid-gap: 20px;
-    justify-content: space-evenly;
-}
-#gridItem{
-    background: #EDE7F6;
-    padding: 3.0rem;
-    border-radius: 1rem;
-    color:#d22a36
-}
-}
+    }
+    .listItem{
+        background: #d22a36;
+        padding: 5px;
+        width: 500px;
+        height: 150px;
+        margin-top: 10px;
+        line-height: 150px;
+        text-align: center;
+    }
+    #newZoom{
+        font-family: 'Gloria Hallelujah', cursive;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill ,minmax(200px,1fr));
+        grid-gap: 20px;
+        justify-content: space-evenly;
+    }
+    ol > li{
+        background: #EDE7F6;
+        padding: 3.0rem;
+        border-radius: 1rem;
+        color:#d22a36
+    }
+    li[id="important"]{
+        font-family: fantasy;
+    }
+    form label{
+        color: #d22a36;
+    }
+    h3 ~ p{
+        font-family:'Gloria Hallelujah', cursive ;
+    }
+    img + p{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    li.listItem{
+        font-family: monospace;
+    }
+
